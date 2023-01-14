@@ -1,0 +1,337 @@
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.search__list {
+    display: none;
+    width: 100%;
+    margin-left: -30px;
+    position: absolute;
+    top: 60px;
+    padding: 20px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+
+.searchBox{
+    position: relative;
+    right: 1rem;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0.25px 35px rgba(0, 0, 0, 0, 1);
+}
+.searchBox.active{
+    width: 500px;
+}
+
+.searchBox .search
+{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em ;
+    cursor: pointer;
+    color: black;
+}
+.searchBox .close
+{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.25em;
+    scale: 0;
+    transition: 0.5s;  
+    color: black;  
+}
+.searchBox.active .close{
+    scale: 1;
+    transition-delay: 0.3s ;
+}
+
+.searchBox .searchlnput
+{
+    position: absolute;
+    left: 90px;
+    width: calc(100% - 120 px);
+    height: 100%;
+    line-height: 60px;
+}
+.searchBox .searchlnput input
+{
+    width: 100%;
+    height: 100%;
+    border: none; 
+    outline: none;
+    font-size: 1.25em;    
+}
+
+.btn__green{
+	cursor: pointer;
+	border-radius: .30rem;
+	color: #000;
+	background-color: #38c914; 
+	padding: 0.5rem 1.5rem;
+	font: 200 16px 'Montserrat';
+	box-shadow: 0 6px 0 #16e353;
+	transition: .3s;
+}
+.btn__green:active{
+	transform: translateY(10px);
+	box-shadow: 0 3px 0 #16e353;
+}
+
+.btn_park_zael_navig{
+    display: flex;   
+}
+.zael__park__m2{
+    margin-top: 5rem;
+}
+.text_right_zael{
+    max-width: 900px;
+    width: 100%;
+}
+
+
+.bg__snow{
+    background:rgb(226, 226, 226);
+}
+.intro, .intro a{
+    color:#fff;
+}
+  /* customizable snowflake styling */
+.snowflake {
+    color: rgb(255, 0, 0);
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px rgb(160, 22, 22);
+}
+  
+  @-webkit-keyframes snowflakes-fall
+  {0%{top:-10%}100%{top:100%}}
+  @-webkit-keyframes snowflakes-shake
+  {0%{-webkit-transform:translateX(0px);transform:translateX(0px)}
+  50%{-webkit-transform:translateX(80px);transform:translateX(80px)}
+  100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}
+  @keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+  @keyframes snowflakes-shake{0%{transform:translateX(0px)}
+  50%{transform:translateX(80px)}100%{transform:translateX(0px)}}
+.snowflake{
+   position:fixed;
+   top:-10%;
+   z-index:9999;
+   -webkit-user-select:none;
+   -moz-user-select:none;
+   -ms-user-select:none;
+   user-select:none;
+   cursor:default;
+   -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+   -webkit-animation-duration:10s,3s;
+   -webkit-animation-timing-function:linear,ease-in-out;
+   -webkit-animation-iteration-count:infinite,infinite;
+   -webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;
+   animation-duration:10s,3s;
+   animation-timing-function:linear,ease-in-out;
+   animation-iteration-count:infinite,infinite;
+   animation-play-state:running,running
+}
+.snowflake:nth-of-type(0){
+    left:1%;-webkit-animation-delay:0s,0s;
+    animation-delay:0s,0s
+}
+.snowflake:nth-of-type(1){
+    left:10%;-webkit-animation-delay:1s,1s;
+    animation-delay:1s,1s
+}
+.snowflake:nth-of-type(2){
+    left:20%;
+    -webkit-animation-delay:6s,.5s;
+    animation-delay:6s,.5s
+}
+.snowflake:nth-of-type(3){
+    left:30%;
+    -webkit-animation-delay:4s,2s;
+    animation-delay:4s,2s
+}
+.snowflake:nth-of-type(4)
+{
+    left:40%;
+    -webkit-animation-delay:2s,2s;
+    animation-delay:2s,2s
+}
+.snowflake:nth-of-type(5){
+    left:50%;-webkit-animation-delay:8s,3s;
+    animation-delay:8s,3s
+}
+.snowflake:nth-of-type(6){
+    left:60%;
+    -webkit-animation-delay:6s,2s;
+    animation-delay:6s,2s
+}
+.snowflake:nth-of-type(7){
+    left:70%;
+    -webkit-animation-delay:2.5s,1s;
+    animation-delay:2.5s,1s
+}
+.snowflake:nth-of-type(8){
+    left:80%;
+    -webkit-animation-delay:1s,0s;
+    animation-delay:1s,0s
+}
+.snowflake:nth-of-type(9){
+    left:90%;
+    -webkit-animation-delay:3s,1.5s;
+    animation-delay:3s,1.5s
+}
+
+
+
+/*
+ CSS for the main interaction
+*/
+.accordion > input[name="collapse"] {
+    display: none; 
+     
+    /*position: absolute;
+    left: -100vw;*/
+}
+  
+.accordion label,
+.accordion .content{
+   max-width: 620px;
+   margin: 0 auto;
+}
+  
+  
+.accordion .content {
+    background: #fff;
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+.accordion > input[name="collapse"]:checked ~ .content {
+    height: 380px;
+    transition: height 0.5s;
+}
+  
+.accordion label {
+    display: block;
+}
+  
+  
+  /* For Desktop */
+@media only screen and (min-width: 620px){
+.accordion > input[name="collapse"]:checked ~ .content {
+    height: 220px;
+}
+}
+.accordion {
+    margin-bottom: 2em;
+    margin-top: 1rem;
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+    border-top: 0;
+    transition: 0.3s;
+}
+  
+.accordion .handle {
+    margin: 0;
+    font-size: 16px;
+}
+  
+.accordion label {
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px;
+    background: #16e353;
+    user-select: none;
+}
+.accordion label:hover,
+  .accordion label:focus {
+    background: #0e700b;
+}
+.accordion .handle label:before {
+    font-family: FontAwesome;
+    content: "\f107";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1em;
+    line-height: 1.556em;
+    vertical-align: middle;
+    transition: 0.4s;
+}
+.accordion > input[name="collapse"]:checked ~ .handle label:before {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: 0.4s;
+}
+  
+.accordion p:last-child {
+    margin-bottom: 0;
+}
+
+.comment {
+	display: block;
+	transition: all 1s;
+}
+
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 10px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #0e700b;
+	transition: all 0.5s;
+	margin-top: 15px;
+}
+
+button.primaryContained {
+	background: #16e353;
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+button.primaryContained:hover {
+	background: #0e700b;
+}
+
+.aaaasd{
+    margin-left: 10rem;
+}

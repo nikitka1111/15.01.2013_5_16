@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/zael.css">
+</head>
+<body>
+    <!-- 1 шапка -->
+  <header class="vers__mob  d-lg-none d-xl-none d-xxl-none .d-xxl-block ">
+      <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/home.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-center">
+            Парки Новосибирса
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">nsk.ru</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ссылка</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Выпадающий список
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Действие</a></li>
+                    <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-outline-success" type="submit" id="search-btn">Поиск</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+    <!-- шапка 2 -->
+  <header>
+    <div class="vers__max d-sm-block ">
+      <div class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/home.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-center">
+              Парки Новосибирса
+            </a>            
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#park">Парки</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#skver">Скверы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#blok4">Памятники</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Достопримечательности</a>
+                </li>
+              </ul>
+            </div>
+            <div class="search-wrapper">
+              <div class="searchBox">
+                <div class="search"><ion-icon name="search-outline"></ion-icon></div>
+                <div class="searchlnput">
+                  <input type="text" placeholder="поиск" id="search-field">
+                </div>
+                <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+              </div>
+              <div class="search__list"></div>
+            </div>
+            <div class="">
+              <button type="button" class="btn__green" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Войти 
+              </button>
+              <!-- modal -->
+            </div>
+        </div>         
+      </div>
+    </div>  
+  </header>
+
+  <main>
+    <section class="park_zael">
+      <div class="container">
+        <div class="zael__park__m1">
+          <h1>Парк Заельцовский </h1>
+          <div class="row mt-5">
+            <div class="col">
+              <div class="card" style="width: 40rem;">
+                <img src="parki__pic/zael/photo_2022-06-13_16-39-12.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a href="#" class="btn btn__green">Перейти</a> 
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <h1>Заголовок</h1>
+              <p class=""> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos consequatur facere omnis a dolorum commodi quo
+                sit, unde similique reprehenderit quasi quaerat, odit rem
+                vero optio culpa soluta, repellendus cumque?
+              </p>
+              <h3>Заголовок</h3>
+              <p class=""> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos consequatur facere omnis a dolorum commodi quo
+                sit, unde similique reprehenderit quasi quaerat, odit rem
+                vero optio culpa soluta, repellendus cumque?
+              </p>
+              <h3>Заголовок</h3>
+              <p class=""> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos consequatur facere omnis a dolorum commodi quo
+                sit, unde similique reprehenderit quasi quaerat, odit rem
+                vero optio culpa soluta, repellendus cumque?
+              </p>
+              <h3>Заголовок</h3>
+              <p class=""> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos consequatur facere omnis a dolorum commodi quo
+                sit, unde similique reprehenderit quasi quaerat, odit rem
+                vero optio culpa soluta, repellendus cumque?
+              </p>
+              <div class="btn_park_zael_navig">
+                <div class="row">
+                  <div class="col-5">
+                    <a href="#" class="btn btn__green">Расположение</a>           
+                  </div>
+                  <div class="col">
+                    <a href="#" class="btn btn__green">Связь </a>
+                  </div>
+                  <div class="col">
+                    <a href="#" class="btn btn__green">еще</a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="zael__park__m2">
+          <h4 class="text_right_zael">
+            Заельцовский парк – парк культуры и отдыха в
+            Заельцовском районе Новосибирска, основанный в
+            1932 году. Расположен в Заельцовском бору.
+          </h4>
+          <h3>История</h3>
+          <p>
+            Парк был создан в 1932 году на территории 140 га
+          </p>
+          <p>
+            В 2021—2022 гг. проведена реконструкция с прокладкой новых 
+            дорожек, прокладкой подземных коммуникаций, оборудованием 
+            детских и спортивных площадок, установкой видеокамер слежения.
+          </p>
+          <h3>Досуг</h3>
+          <p>
+            В парке находятся различные аттракционы.
+            Организуются физкультурно-оздоровительные мероприятия, посетители устраивают лыжные прогулки.
+            Через парк пролегает Детская железная дорога, связывающая его с Новосибирским зоопарком.
+            На территории парка расположен примыкающий к Оби пляж.
+          </p>
+          <h3>Исторические реконструкции</h3>
+          <p>
+            В Заельцовском парке проводятся мероприятия, на которых реконструируются различные исторические периоды.
+
+            Устраиваются военно-исторические реконструкции, посвящённые событиям Великой Отечественной войны.
+            23 февраля 2019 года был воссоздан финальный этап окончательного освобождения 
+            Ленинграда от блокады.    
+
+            В 2019 году в парке организовывались фестивали на тему эпохи средневековья: в августе состоялся фестиваль
+            «Княжий двор» с воссозданием рыцарских поединков и мастер-классами по ремеслу, 
+            в сентябре — «Перекрёстки истории», где также реконструировались средневековые сражения, 
+            ремесленные занятия и, кроме того, устраивалась реконструкция блюд средневековой кухни.        
+            </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/slide3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="bg__snow__1">
+      <div class="snowflakes bg__snow" aria-hidden="true">
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container aaaasd">
+      <section class="accordion">
+        <input type="checkbox" name="collapse" id="handle4" checked="checked">
+        <h2 class="handle">
+          <label for="handle4">Интересные факты о Парке</label>
+        </h2>
+        <div class="content">
+            <p><strong>Lorem ipsum dolor:</strong>
+                Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. 
+            </p>
+            <p>
+             Excepteur sint occaecat cupidatat non proident
+             sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>          
+        </div>
+        
+      </section>
+  
+      <section class="accordion">
+      <input type="checkbox" name="collapse" id="handle5">
+      <h2 class="handle">
+        <label for="handle5">Интересные факты о Парке</label>
+      </h2>
+      <div class="content">
+          <p><strong>Lorem ipsum dolor:</strong>
+              Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna 
+              aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore
+              eu fugiat nulla pariatur. 
+          </p>
+          <p>
+          Excepteur sint occaecat cupidatat non proident
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+          </p> 
+      </div>
+      </section>
+  
+      <section class="accordion">
+        <input type="checkbox" name="collapse" id="handle6">
+        <h2 class="handle">
+          <label for="handle6">Интересные факты о Парке</label>
+        </h2>
+        <div class="content">
+            <p><strong>Lorem ipsum dolor:</strong>
+                Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. 
+            </p>
+            <p>
+            Excepteur sint occaecat cupidatat non proident
+            sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p> 
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+  <section class="container" id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="comment">
+            <p v-for="items in item" v-text="items"></p>
+          </div><!--End Comment-->
+        </div><!--End col -->
+      </div><!-- End row -->
+      <div class="row">
+        <div class="col-12">
+          <textarea type="text" class="input" placeholder="Написать комментарий" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Отправить</button>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div>
+    <!--End Container -->
+  </section>
+  </main>
+
+  <footer>
+    <section class="podval__nomer">
+      <footer class="bd-footer py-3 py-md-4 mt-4 bg-light">
+        <div class="container py-4 py-md-5 px-2 px-md-3">
+          <div class="row">
+            <div class="col-6 col-lg-2  mb-3">
+              <h5>Памятники</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a  href="#" class="green_color">Главная</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Монумент Славы</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник Лабораторной Мыши</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Скульптурная композиция Сцена покупки</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник Александру III, Новосибирск</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник светофору</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник В.С. Высоцкому</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник героям революции</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник Александру Покрышкину</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Скульптура Вовка в Тридевятом царстве</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Дом Ленина</a></li>
+              </ul>
+            </div>
+            <!-- вторая половина списка -->
+            <div class="col-6 col-lg-2 mt-4">
+              <ul class="list-unstyled">
+                <li class="mb-2"><a  href="#" class="green_color">Памятник М.И. Глинке</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник В.И. Ленину</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Стела трудовому подвигу ленинградцев, эвакуированных в Новосибирск в 1941-1943 гг.</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник Металлический Трон</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Скульптурная композиция Сибирские просторы</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник первому свиданию</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник Борису Богаткову</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник героям мирного времени, пожарным и спасателям</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Цветочные часы</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник архитектору А.Д. Крячкову</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Скверы</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a  href="#" class="green_color">Нарымский сквер</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Нарымский сквер</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Павловский сквер</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Парк семейных традиций и Аллея семьи</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Первомайский сквер</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Парк «Эдемский сад»</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер Авиаторов</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер Военной Славы (Монумент Славы)</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер Героев Революции</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер им. Гагарина</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер им. Чаплыгина</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер «Лучистый»</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер Победы </a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер Сибиряков-гвардейцев</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер у театра «Глобус»</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Театральный сквер</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Тимирязевский сквер</a></li>
+              </ul>
+            </div>
+            <div class="col-5 col-lg-2 mb-3">
+              <h5 >Дост-сти</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#" class="green_color">Парк чудес Галилео</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Бугринский мост</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Монумент Славы</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Собор во имя Александра Невского</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Площадь Ленина</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Памятник Лабораторной Мыши</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Часовня Святого Николая</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Скульптурная композиция Сцена покупки</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Первый железнодорожный мост через Обь</a></li>
+                <li class="mb-2"><a href="#" class="green_color">Памятник Александру III, Новосибирск</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+              <h5>Парки</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a  href="index3.html" class="green_color">Парк культуры и отдыха Заельцовский</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Березовая роща</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Первомайский сквер</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Набережная Парк культуры и отдыха</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Центральный парк культуры и отдыха</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Нарымский сквер</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Парк Городское начало</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Памятник героям революции</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер на Орджоникидзе</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Парк культуры и отдыха им. С.М. Кирова</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сосновый бор</a></li>
+              </ul>
+            </div>
+            <!-- вторая половина парков -->
+            <div class="col-6 col-lg-2 mt-4">
+              <ul class="list-unstyled">
+                <li class="mb-2"><a  href="#" class="green_color">Центральный парк</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Парк Эдем</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Павловский сквер</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер 40 лет Победы в Великой Отечественной войне</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Парк культуры и отдыха "У моря Обского"</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Новосибирский Дендропарк</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер ГПНТБ</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Поляна для пикника</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Сквер покорителей атома</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Первомайский Парк Культуры и Отдыха</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Ротари Парк</a></li>
+                <li class="mb-2"><a  href="#" class="green_color">Материнский сквер</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="js/zael.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/icon_customImage.js" type="text/javascript"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/js/bootstrap.esm.min.js"></script>
+</body>
+</html>
